@@ -1,13 +1,118 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: 'Montserrat', sans-serif;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	background: url('https://img.freepik.com/free-photo/cement-texture_1194-5292.jpg?w=740&t=st=1709703574~exp=1709704174~hmac=0ff1fff15aad27f640ae7a9ac944105dcb6a1d61f603a0218cc9f63fbb5a3702');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header.container {
+	/* box model */
+	padding: 16px 32px;
+	/* another style */
+	background-color: #f5ba13;
+	text-align: center;
+}
+
+header.container h1 {
+	color: #fff;
+	font-family: 'Anta', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+footer {
+	/* position */
+	position: absolute;
+	bottom: 0;
+	/* box model */
+	width: 100%;
+	height: 2.5rem;
+	/* another style */
+	text-align: center;
+}
+
+footer p {
+	color: #ccc;
+}
+
+.note {
+	/* box model */
+	border-radius: 7px;
+	box-shadow: 0 1px 5px #707c74;
+	margin: 16px;
+	padding: 16px;
+	width: 240px;
+	/* snother style */
+	background: #fff;
+	float: left;
+}
+.note h2 {
+	margin-bottom: 6px;
+	font-size: 1.1em;
+}
+.note p {
+	margin-bottom: 10px;
+	font-size: 1.1em;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+.note button {
+	/* position */
+	position: relative;
+	/* box model */
+	margin-right: 10px;
+	border: none;
+	width: 36px;
+	height: 36px;
+	/* another style */
+	background-color: transparent;
+	color: #f5ba13;
+	cursor: pointer;
+	float: right;
+}
+
+form.create-note {
+	/* position */
+	position: relative;
+	/* box model */
+	width: 480px;
+	margin: 30px auto;
+	padding: 20px;
+	border-radius: 7px;
+	box-shadow: 0 1px 5px #707c74;
+	/* another style */
+	background: #fff;
+}
+form.create-note input,
+form.create-note textarea {
+	/* box model */
+	padding: 8px;
+	width: 100%;
+	border: none;
+	/* another style */
+	font-size: 1.2em;
+	font-family: inherit;
+	resize: none;
+	outline: none;
+}
+form.create-note button {
+	/* position */
+	position: absolute;
+	right: 18px;
+	bottom: -18px;
+	/* box model */
+	border: none;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	box-shadow: 0 1px 5px #707c74;
+	/* another style */
+	background: #f5ba13;
+	color: #fff;
+	cursor: pointer;
 }
